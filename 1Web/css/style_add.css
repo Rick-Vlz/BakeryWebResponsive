@@ -1,0 +1,10 @@
+.CNav{
+    background-color: rgb(43, 40, 40);
+}
+h1{
+    color: blue;
+}
+@font-face {
+    font-family: xd;
+    src: url(../assets/fonts/nova_quinta/NovaQuinta_PERSONAL_USE_ONLY.otf);
+}
