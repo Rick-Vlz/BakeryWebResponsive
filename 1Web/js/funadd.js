@@ -105,5 +105,5 @@ $(document).ready(function(){
         $('h3').css({'font-family':'Helvetica'});
         $('h5').css({'font-family':'Helvetica'});
         $('p').css({'font-family':'Helvetica'});
-});
+    });
 });
