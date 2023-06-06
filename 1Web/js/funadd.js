@@ -98,7 +98,7 @@ $(document).ready(function(){
         $("#p2").html("");
     });
     $("#BT1").click(function(){
-            $('body').css('background-color', 'Purple');
+            $('body').css('background-color', 'Black');
     });
     $("#BT2").dblclick(function(){
         $('h1').css({'font-family':'Helvetica'});
