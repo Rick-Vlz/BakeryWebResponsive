@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    $("#b2").css({
+        with: "1700px",
+        height: "300px"
+    });
+    $("#b1").css({
+        with: "1700px",
+        height: "300px"
+    });
+
     $("#img1").mouseover(function(){
         $("#img1").attr("src", "assets/img/p3.jpg");
     });
@@ -26,7 +35,7 @@ $(document).ready(function(){
             "border": "none"
         });
         $("h5").html("Pastel Inflado");
-        $("p").html("Pastel inflado con mucha levadura y vapor");
+        $("#p0").html("Pastel inflado con mucha levadura y vapor");
     });
     $("#gal2").mouseover(function(){
         $(".imgst").attr("src", "assets/img/p7.jpg");
@@ -37,7 +46,7 @@ $(document).ready(function(){
             "border": "none"
         });
         $("h5").html("Pan de Mermelada");
-        $("p").html("Pan relleno de mermelada de fresa");
+        $("#p0").html("Pan relleno de mermelada de fresa");
     });
     $("#gal3").mouseover(function(){
         $(".imgst").attr("src", "assets/img/p8.jpg");
@@ -48,7 +57,7 @@ $(document).ready(function(){
             "border": "none"
         });
         $("h5").html("Pastel de Chocolate");
-        $("p").html("Pastel con chocolate en su interior y derretido acompañado de frambuesas");
+        $("#p0").html("Pastel con chocolate en su interior y derretido acompañado de frambuesas");
     });
     $("#gal4").mouseover(function(){
         $(".imgst").attr("src", "assets/img/p9.jpg");
@@ -59,6 +68,42 @@ $(document).ready(function(){
             "border": "none"
         });
         $("h5").html("Gran calidad en panes");
-        $("p").html("Panes para todos los gustos hechos de manera artesanal");
+        $("#p0").html("Panes para todos los gustos hechos de manera artesanal");
     });
+    $("#b1").mouseover(function(){
+        $("#p1").html("Estrudeln con un gran sabor, y un estilo elgante.");
+    });
+    $("#b1").mouseout(function(){
+        $("#p1").html("");
+    });
+
+    $("#b2").click(function(){
+        $("#b2").css({
+            with: "1700px",
+            height: "400px"
+        });
+        $("#b2").css({
+           "opacity": "0.5" 
+        });
+        $("#p2").html("Estrudeln con un gran sabor, y un estilo elgante.");
+    });
+    $("#b2").dblclick(function(){
+        $("#b2").css({
+            with: "1700px",
+            height: "300px"
+        });
+        $("#b2").css({
+            "opacity": "1" 
+         });
+        $("#p2").html("");
+    });
+    $("#BT1").click(function(){
+            $('body').css('background-color', 'Purple');
+    });
+    $("#BT2").dblclick(function(){
+        $('h1').css({'font-family':'Helvetica'});
+        $('h3').css({'font-family':'Helvetica'});
+        $('h5').css({'font-family':'Helvetica'});
+        $('p').css({'font-family':'Helvetica'});
+});
 });
