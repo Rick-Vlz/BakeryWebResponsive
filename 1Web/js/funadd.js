@@ -78,6 +78,7 @@ $(document).ready(function(){
     });
 
     $("#b2").click(function(){
+        $("#b2").removeClass("responsive-img");
         $("#b2").css({
             with: "1700px",
             height: "400px"
@@ -88,6 +89,7 @@ $(document).ready(function(){
         $("#p2").html("Estrudeln con un gran sabor, y un estilo elgante.");
     });
     $("#b2").dblclick(function(){
+        $("#b2").addClass("responsive-img");
         $("#b2").css({
             with: "1700px",
             height: "300px"
@@ -99,11 +101,13 @@ $(document).ready(function(){
     });
     $("#BT1").click(function(){
             $('body').css('background-color', 'Black');
+            $('body').css('color', 'White');
+            
     });
     $("#BT2").dblclick(function(){
-        $('h1').css({'font-family':'Helvetica'});
-        $('h3').css({'font-family':'Helvetica'});
-        $('h5').css({'font-family':'Helvetica'});
-        $('p').css({'font-family':'Helvetica'});
+        $('body').css({'font-family':'Helvetica'});
+        
     });
+    $("#vid1").attr("src", "assets/video/vid1.mp4");
+    $("#vid2").attr("src", "assets/video/vid2.mp4");
 });

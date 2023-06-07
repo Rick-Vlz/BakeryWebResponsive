@@ -14,6 +14,30 @@
     <script type="text/JavaScript" src="js/jquery.js"></script>
     <script type="text/JavaScript" src="js/funadd.js"></script> <!--En un documento externo 
         programo la funcionalidad  js-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #D1C7C7; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #959595; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+</style>
 </head>
 <body>
     <div class="container-fluid">
@@ -82,10 +106,22 @@
         </div>
         <div class="row">
             <div class="col s6 m6 l6 center-align">
-                <button id="BT1">Purple</button>
+                <button class="button-31 responsive-img" role="button" id="BT1">Black</button>
             </div>
             <div class="col s6 m6 l6 center-align">
-                <button id="BT2">Helvetica</button>
+                <button class="button-31 responsive-img" role="button" id="BT2">Helvetica</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <h1>Videos Reposteria</h1>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <video id="vid1" src=""  muted autoplay loop class="responsive-video"></video>
+            </div>
+            <div class="col s6">
+                <video id="vid2" src=""  muted autoplay loop class="responsive-video"></video>
             </div>
         </div>
     </div>
