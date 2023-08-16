@@ -5,125 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Dice que es compatible con edge-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--etiqueta el diseño responsivo, osea que se
     adapte al ancho de pantalla conforma a dispositivo-->
-    <title>FoodCity Bakery</title><!-- Titulo o nombre de la pagina-->
+    <title>Deluxe Backery</title><!-- Titulo o nombre de la pagina-->
     
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="36x36" href="assets/img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/style_add.css"><!--Forma de importar css a mi pagina
-    con archivos exernos-->
-    <script type="text/JavaScript" src="js/jquery.js"></script>
-    <script type="text/JavaScript" src="js/funadd.js"></script> <!--En un documento externo 
-        programo la funcionalidad  js-->
+    <link rel="stylesheet" type="text/css" href="css/style_add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/funadd.js"></script>
+    <script type="text/javascript" src="css/materialize/js/materialize.js"></script>
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px #D1C7C7; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #959595; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: grey; 
-}
-</style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col s12">
-                <nav>
-                    <div class="nav-wrapper CNav">
-                      <a href="#" class="brand-logo"><img src="assets/img/icons8-cake-60.png">FoodCity Bakery</a>
-                      <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Location</li>
-                        <li><a href="badges.html">Profile</a></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
-                      </ul>
-                    </div>
-                  </nav>s
-            </div>
+    
+    <nav>
+        <div class="nav-wrapper CNav black-text">
+          <a href="#" class="brand-logo LogoC"><img src="assets/img/android-chrome-62x62.png"></a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html #inicio">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="product.html">Productos</a></li>
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="team.html">Equipo</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="footer.html">Ubicacion</a></li>
+          </ul>
         </div>
-        <div class="row">
-            <div class="col s12 center-align">
-                <h1>Pagina de Repostería</h1>
+      </nav>
+
+
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="assets/img/p10.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="assets/img/profile.png"></a>
+          <a href="#name"><span class="white-text name">Ricardo Valdes</span></a>
+          <a href="#email"><span class="white-text email">ricardovlz.wlf@gmail.com</span></a>
+        </div></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="product.html">Productos</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="team.html">Equipo</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="footer.html" class="subheader">Ubicacion</a></li>
+      </ul>
+
+
+      <header class="masthead valign-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 center-align center-block">
+                
+                <h1 class="TextHeader white-text">Deluxe Backery</h1>
+                <h6 class="TextHeaderp white-text">La dulzura en tu paladar</h6>
+                <br>
+                <button class="button-31" role="button" id="BT1">Inicio</button>
             </div>
+          </div>
         </div>
-        <divc class="row">
-            <div class="col 12 s12 m6 l6 xl6">
-                <img id="img1" src="assets/img/p1.jpg" class="responsive-img">
-            </div>
-            <div class="col 12 s12 m6 l6 xl6">
-                <img id="img2" src="assets/img/p2.jpg" class="responsive-img event2">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 center-align">
-                <h3>Galeria de Imagenes con Jquery</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <img src="assets/img/p6.jpg" class="responsive-img imgst">
-                <h5>Pastel Inflado</h5>
-                <p id="p0">Pastel inflado con mucha levadura y vapor, un rico sabor</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s3">
-                <img src="assets/img/p6.jpg" class="responsive-img" id="gal1">
-            </div>
-            <div class="col s3">
-                <img src="assets/img/p7.jpg" class="responsive-img" id="gal2">
-            </div>
-            <div class="col s3">
-                <img src="assets/img/p8.jpg" class="responsive-img" id="gal3">
-            </div>
-            <div class="col s3">
-                <img src="assets/img/p9.jpg" class="responsive-img" id="gal4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s6 m6 l6 x16 center-align">
-                <img src="assets/img/p5.jpg" class="responsive-img" id="b1">
-                <p id="p1"></p>
-            </div>
-            <div class="col s6 m6 l6 x16 center-align">
-                <img src="assets/img/p10.jpg" class="responsive-img" id="b2">
-                <p id="p2"></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s6 m6 l6 center-align">
-                <button class="button-31 responsive-img" role="button" id="BT1">Black</button>
-            </div>
-            <div class="col s6 m6 l6 center-align">
-                <button class="button-31 responsive-img" role="button" id="BT2">Helvetica</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 center-align">
-                <h1>Videos Reposteria</h1>
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <video id="vid1" src=""  muted autoplay loop class="responsive-video"></video>
-            </div>
-            <div class="col s6">
-                <video id="vid2" src=""  muted autoplay loop class="responsive-video"></video>
-            </div>
-        </div>
-    </div>
+      </header>
 </body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyB9zsvXHjWlREeSHoU5UffB1ujqczSirfs",
+    authDomain: "deluxebakery-7a773.firebaseapp.com",
+    projectId: "deluxebakery-7a773",
+    storageBucket: "deluxebakery-7a773.appspot.com",
+    messagingSenderId: "877444447770",
+    appId: "1:877444447770:web:53f40826e699e3ec235ba3",
+    measurementId: "G-JHGQHZ2K4L"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </html>
